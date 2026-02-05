@@ -10,6 +10,8 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Impact.com Verification */}
+      <div className="hidden">Impact-Site-Verification: fb8a5291-365b-464c-9bc9-66e09eb657b1</div>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-navy to-navy-light text-white py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
