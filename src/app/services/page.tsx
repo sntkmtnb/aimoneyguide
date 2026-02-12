@@ -8,6 +8,21 @@ export const metadata: Metadata = {
 
 const services = [
   {
+    title: 'OpenClaw AIアシスタント構築',
+    price: '20万円',
+    timeline: '5日',
+    description:
+      '今話題のOpenClawで、あなた専用のAIアシスタントを構築。Discord/Slack/LINE等と連携し、24時間あなたの代わりに働く相棒を作ります。',
+    features: [
+      'OpenClawのセットアップ＆VPSサーバー構築',
+      'あなた専用の性格・知識設定（SOUL.md）',
+      'Discord/Slack/LINE/メール連携',
+      'スキル追加（カレンダー、SNS投稿、検索等）',
+      'カスタムcronジョブで定期タスク自動実行',
+    ],
+    popular: true,
+  },
+  {
     title: 'AIチャットボット構築',
     price: '30万円',
     timeline: '1週間',
@@ -34,7 +49,6 @@ const services = [
       'エラー時はSlack/メールで即通知',
       '技術: Node.js/Python + LLM + 各種API連携',
     ],
-    popular: true,
   },
   {
     title: 'カスタムAIアシスタント',
@@ -111,7 +125,7 @@ export default function ServicesPage() {
           <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">
             テンプレートではありません。すべてあなたのビジネスに合わせたカスタム構築です。
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((s) => (
               <div
                 key={s.title}
@@ -183,23 +197,24 @@ export default function ServicesPage() {
       {/* How It Works */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">ご利用の流れ</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">あなたがやることは3つだけ</h2>
+          <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">構築も運用も全部こちらでやります。あなたは教えるだけ。</p>
           <div className="space-y-8">
             {[
               {
                 step: '01',
-                title: '無料相談',
-                desc: '何を自動化したいか教えてください。一緒に最適なアプローチを考えます。費用は一切かかりません。',
+                title: '15分の無料相談',
+                desc: '「何を自動化したいか」を教えてください。メール対応？データ入力？SNS？一緒に最適なプランを決めます。技術知識はゼロで大丈夫です。',
               },
               {
                 step: '02',
-                title: 'カスタム構築',
-                desc: 'あなた専用のAIエージェントをゼロから構築。毎日進捗を共有し、途中でテストもできます。',
+                title: '使っているツールを教える',
+                desc: 'Gmail、Slack、Notion、スプレッドシート…普段使っているツールを教えてください。それだけで、あとは全部こちらで構築します。毎日進捗を共有するので、確認するだけでOK。',
               },
               {
                 step: '03',
-                title: 'ローンチ＆改善',
-                desc: 'エージェントが稼働開始。パフォーマンスを監視し、完璧になるまで調整を続けます。',
+                title: '使い方レクチャーを受ける（30分）',
+                desc: '完成したAIエージェントの使い方をお見せします。30日間の調整期間付きなので、「ここをこうしてほしい」があればすぐ対応します。',
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 items-start">
