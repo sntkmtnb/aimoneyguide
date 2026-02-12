@@ -19,23 +19,32 @@ export const metadata: Metadata = {
     'AI開発',
     'OpenClaw構築代行',
   ],
-  authors: [{ name: 'AI Money Guide' }],
-  creator: 'AI Money Guide',
+  authors: [{ name: 'NEWHELLO' }],
+  creator: 'NEWHELLO',
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
     url: 'https://ai-money-guide.com',
-    siteName: 'AI Money Guide',
-    title: 'AI Money Guide — OpenClaw構築代行',
+    siteName: 'OpenClaw構築代行 by NEWHELLO',
+    title: 'OpenClaw構築代行 by NEWHELLO',
     description:
       'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
+    images: [
+      {
+        url: 'https://ai-money-guide.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'OpenClaw構築代行 by NEWHELLO — AIがあなたの業務を24時間自動化',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Money Guide — OpenClaw構築代行',
+    title: 'OpenClaw構築代行 by NEWHELLO',
     description:
       'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
     creator: '@ai_money_guide',
+    images: ['https://ai-money-guide.com/og-image.png'],
   },
   robots: {
     index: true,
