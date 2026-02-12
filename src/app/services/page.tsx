@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: 'AIアシスタント構築',
-    price: '30万円〜',
+    price: '30万円〜（税込）',
     timeline: '約1週間',
     tagline: '自動化 1業務',
     description:
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: '業務自動化パック',
-    price: '50万円〜',
+    price: '50万円〜（税込）',
     timeline: '約2週間',
     tagline: '自動化 最大3業務',
     description:
@@ -42,7 +42,7 @@ const services = [
   },
   {
     title: 'フルカスタム構築',
-    price: '80万円〜',
+    price: '80万円〜（税込）',
     timeline: '約3週間',
     tagline: '自動化 最大5業務＋長期記憶',
     description:
