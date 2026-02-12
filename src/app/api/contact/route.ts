@@ -5,23 +5,28 @@ const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL ||
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, company, email, message } = await req.json();
 
     if (!name || !email || !message) {
-      return NextResponse.json({ error: '全項目を入力してください' }, { status: 400 });
+      return NextResponse.json({ error: '必須項目を入力してください' }, { status: 400 });
     }
 
     // Discord Webhookに送信
+    const fields = [
+      { name: 'お名前', value: name, inline: true },
+      { name: 'メール', value: email, inline: true },
+    ];
+    if (company) {
+      fields.push({ name: '会社名・屋号', value: company, inline: true });
+    }
+    fields.push({ name: 'ご相談内容', value: message, inline: false });
+
     const discordMessage = {
       embeds: [
         {
           title: '📩 新規お問い合わせ',
           color: 0x00d4ff,
-          fields: [
-            { name: 'お名前', value: name, inline: true },
-            { name: 'メール', value: email, inline: true },
-            { name: 'ご相談内容', value: message },
-          ],
+          fields,
           timestamp: new Date().toISOString(),
         },
       ],

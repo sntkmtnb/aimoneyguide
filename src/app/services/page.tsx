@@ -160,7 +160,7 @@ export default function ServicesPage() {
                   className={`block text-center py-3 rounded-xl font-semibold transition-colors ${
                     s.popular
                       ? 'bg-primary text-white hover:bg-primary-dark'
-                      : 'bg-gray-100 text-navy hover:bg-gray-200'
+                      : 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
                   }`}
                 >
                   このプランで相談する →

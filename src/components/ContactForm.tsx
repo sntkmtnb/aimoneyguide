@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function ContactForm() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [form, setForm] = useState({ name: '', company: '', email: '', message: '' });
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -17,7 +17,7 @@ export default function ContactForm() {
       });
       if (res.ok) {
         setStatus('sent');
-        setForm({ name: '', email: '', message: '' });
+        setForm({ name: '', company: '', email: '', message: '' });
       } else {
         setStatus('error');
       }
@@ -50,6 +50,18 @@ export default function ContactForm() {
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
           placeholder="山田太郎"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none bg-white text-gray-900"
+        />
+      </div>
+      <div>
+        <label className="block text-sm font-semibold text-gray-300 mb-1">
+          会社名・屋号 <span className="text-gray-500 text-xs">（任意）</span>
+        </label>
+        <input
+          type="text"
+          value={form.company}
+          onChange={(e) => setForm({ ...form, company: e.target.value })}
+          placeholder="例: 株式会社〇〇、〇〇事務所"
           className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none bg-white text-gray-900"
         />
       </div>
