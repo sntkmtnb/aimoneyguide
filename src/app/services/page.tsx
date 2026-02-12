@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'OpenClaw構築代行 | AIエージェント開発',
@@ -72,7 +73,7 @@ export default function ServicesPage() {
             技術知識ゼロでOK。構築から運用まで全部やります。
           </p>
           <a
-            href="mailto:hello@ai-money-guide.com?subject=AIエージェント開発のご相談"
+            href="#contact"
             className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors"
           >
             無料相談する →
@@ -144,7 +145,7 @@ export default function ServicesPage() {
                   ))}
                 </ul>
                 <a
-                  href="mailto:hello@ai-money-guide.com?subject=AIエージェント開発のご相談"
+                  href="#contact"
                   className={`block text-center py-3 rounded-xl font-semibold transition-colors ${
                     s.popular
                       ? 'bg-primary text-white hover:bg-primary-dark'
@@ -247,21 +248,16 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 bg-navy text-white text-center">
+      {/* Contact Form */}
+      <section id="contact" className="py-20 bg-navy text-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            自動化、始めませんか？
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-center">
+            無料相談する
           </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            無料15分相談で、AIエージェントがあなたのビジネスをどう変えるかお見せします。
+          <p className="text-gray-300 text-lg mb-8 text-center">
+            まずはお気軽にご相談ください。24時間以内にご返信します。
           </p>
-          <a
-            href="mailto:hello@ai-money-guide.com?subject=AIエージェント開発のご相談"
-            className="inline-block bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors"
-          >
-            無料相談する →
-          </a>
+          <ContactForm />
         </div>
       </section>
     </div>
