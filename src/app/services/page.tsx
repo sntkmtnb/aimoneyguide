@@ -68,9 +68,9 @@ export default function ServicesPage() {
             OpenClaw 構築代行
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            雑務に追われる毎日、
+            AIがあなたの業務を
             <br />
-            <span className="text-primary">終わりにしませんか？</span>
+            <span className="text-primary">24時間自動化</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
             メール対応、データ入力、SNS運用——
@@ -179,7 +179,7 @@ export default function ServicesPage() {
           <div className="space-y-6">
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <div className="flex items-center gap-2 mb-3">
-                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">30万円プラン</span>
+                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">AIアシスタント構築（30万円〜）</span>
                 <span className="text-gray-400 text-xs">自動化1業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
@@ -192,7 +192,7 @@ export default function ServicesPage() {
 
             <div className="bg-white rounded-xl border border-primary/30 p-6">
               <div className="flex items-center gap-2 mb-3">
-                <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">50万円プラン</span>
+                <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">業務自動化パック（50万円〜）</span>
                 <span className="text-gray-400 text-xs">自動化3業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
@@ -205,7 +205,7 @@ export default function ServicesPage() {
 
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <div className="flex items-center gap-2 mb-3">
-                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">80万円プラン</span>
+                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">フルカスタム構築（80万円〜）</span>
                 <span className="text-gray-400 text-xs">自動化5業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
@@ -319,20 +319,45 @@ export default function ServicesPage() {
       {/* Proof */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl font-bold mb-4">実績</h2>
+          <h2 className="text-2xl font-bold mb-4">私たち自身がOpenClawで動いています</h2>
           <p className="text-gray-500 mb-8">
-            私たちのサービス自体が、OpenClawで動いています。
+            あなたに提供するのと同じ仕組みを、私たち自身が毎日使っています。
           </p>
-          <div className="bg-white rounded-2xl border border-gray-200 p-8 text-left max-w-2xl mx-auto">
-            <h3 className="font-bold text-lg mb-3">🤖 このサイトの裏側</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              お問い合わせフォームから送信された内容は、OpenClawのAIエージェントが受信し、
-              Discordに即座に通知します。24時間体制で問い合わせを逃しません。
+          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-left">
+              <h3 className="font-bold mb-2">📩 お問い合わせ対応</h3>
+              <p className="text-gray-600 text-sm">
+                このサイトのフォームから送信された内容は、AIが受信しDiscordに即通知。24時間体制で問い合わせを逃しません。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-left">
+              <h3 className="font-bold mb-2">📱 SNS運用</h3>
+              <p className="text-gray-600 text-sm">
+                Xの投稿スケジュール管理、リプライ対応、エンゲージメント分析。すべてOpenClawのAIエージェントが自動実行。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-left">
+              <h3 className="font-bold mb-2">📊 データ管理</h3>
+              <p className="text-gray-600 text-sm">
+                リード情報の整理、プロジェクト管理、チームへの連携。手動作業をほぼゼロに。
+              </p>
+            </div>
+            <div className="bg-white rounded-xl border border-gray-200 p-6 text-left">
+              <h3 className="font-bold mb-2">🔔 リアルタイム通知</h3>
+              <p className="text-gray-600 text-sm">
+                重要なメール、問い合わせ、アラートをAIが判断して即座に通知。見逃しゼロ。
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 bg-white rounded-xl border-2 border-primary/20 p-6 max-w-2xl mx-auto">
+            <p className="text-sm text-gray-700">
+              💡 <strong>新サービスのため、現在モニター企業を募集中です。</strong>
+              <br />
+              <span className="text-gray-500">最初の導入事例として、特別価格でご提供します。</span>
             </p>
-            <p className="text-gray-600 text-sm">
-              SNSの投稿管理、リード情報の整理、チームへの連携——すべてOpenClawのエージェントが自動で行っています。
-              <span className="font-semibold text-navy">つまり、あなたに提供するサービスと同じ仕組みを、私たち自身が毎日使っています。</span>
-            </p>
+            <a href="#contact" className="inline-block mt-3 text-primary font-semibold text-sm hover:underline">
+              モニター詳細を聞く →
+            </a>
           </div>
         </div>
       </section>
@@ -489,6 +514,8 @@ export default function ServicesPage() {
           <div className="bg-white rounded-xl border border-gray-200 p-6 text-sm text-gray-600 space-y-2">
             <p><span className="font-semibold text-gray-800">サービス名：</span>OpenClaw構築代行 by NEWHELLO</p>
             <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（<a href="https://newhello.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp/</a>）</p>
+            <p><span className="font-semibold text-gray-800">代表：</span>篠塚 基伸</p>
+            <p><span className="font-semibold text-gray-800">事業内容：</span>AIエージェント開発・業務自動化の設計と構築</p>
             <p><span className="font-semibold text-gray-800">お問い合わせ：</span>上記フォームよりお願いします</p>
             <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@ai_money_guide</a></p>
           </div>

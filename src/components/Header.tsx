@@ -22,6 +22,9 @@ export default function Header() {
             <Link href="/services" className="text-gray-600 hover:text-primary transition-colors">
               サービス
             </Link>
+            <Link href="/blog/openclaw-guide" className="text-gray-600 hover:text-primary transition-colors">
+              ガイド
+            </Link>
             <Link
               href="/services#contact"
               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
@@ -51,6 +54,9 @@ export default function Header() {
           <nav className="md:hidden py-4 border-t border-gray-100 space-y-3">
             <Link href="/services" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
               サービス
+            </Link>
+            <Link href="/blog/openclaw-guide" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
+              ガイド
             </Link>
             <Link
               href="/services#contact"
