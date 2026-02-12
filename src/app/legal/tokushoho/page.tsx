@@ -12,7 +12,8 @@ export default function TokushohoPage() {
         <div className="bg-white rounded-xl border border-gray-200 p-8 space-y-6 text-sm text-gray-700">
           <div>
             <p className="font-semibold text-gray-900 mb-1">販売業者</p>
-            <p>篠塚基伸（個人事業）</p>
+            <p>NEWHELLO（篠塚基伸 個人事業）</p>
+            <p className="text-xs text-gray-400 mt-1"><a href="https://newhello.jp" target="_blank" rel="noopener noreferrer" className="hover:underline">https://newhello.jp</a></p>
           </div>
           <div>
             <p className="font-semibold text-gray-900 mb-1">運営責任者</p>

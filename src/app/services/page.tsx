@@ -344,8 +344,9 @@ export default function ServicesPage() {
           <h2 className="text-lg font-bold mb-6 text-center">運営者情報</h2>
           <div className="bg-white rounded-xl border border-gray-200 p-6 text-sm text-gray-600 space-y-2">
             <p><span className="font-semibold text-gray-800">サービス名：</span>AI Money Guide</p>
-            <p><span className="font-semibold text-gray-800">運営者：</span>篠塚基伸</p>
-            <p><span className="font-semibold text-gray-800">所在地：</span>お問い合わせいただいた方に開示いたします</p>
+            <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（篠塚基伸 個人事業）</p>
+            <p><span className="font-semibold text-gray-800">運営母体：</span><a href="https://newhello.jp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp</a></p>
+            <p><span className="font-semibold text-gray-800">事業内容：</span>ソフトウェア開発・AIエージェント構築</p>
             <p><span className="font-semibold text-gray-800">お問い合わせ：</span>上記フォームよりお願いします</p>
             <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@ai_money_guide</a></p>
           </div>
