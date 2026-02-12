@@ -85,7 +85,7 @@ export default function ServicesPage() {
           >
             まずは無料で相談する →
           </a>
-          <p className="text-gray-400 text-sm mt-4">※ 相談は無料です。しつこい営業は一切しません。</p>
+          <p className="text-gray-400 text-sm mt-4">※ 相談は無料です。次のステップはすべてお客様のペースで。</p>
         </div>
       </section>
 
@@ -183,7 +183,7 @@ export default function ServicesPage() {
                 <span className="text-gray-400 text-xs">自動化1業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="font-semibold">美容室オーナー Aさん</span> — LINEで予約の問い合わせが来たら、AIが空き時間を確認して自動で返信。
+                <span className="font-semibold">都内・美容室経営（開業3年目）</span> — LINEで予約の問い合わせが来たら、AIが空き時間を確認して自動で返信。
               </p>
               <p className="text-xs text-gray-500 italic">
                 「今まで1日20件の予約電話に出てたのが、LINEで自動完結するようになりました」
@@ -196,7 +196,7 @@ export default function ServicesPage() {
                 <span className="text-gray-400 text-xs">自動化3業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="font-semibold">EC事業者 Bさん</span> — ①注文メールが来たら自動でスプレッドシートに記録 → ②在庫が少なくなったらSlackに通知 → ③毎週月曜に売上レポートを自動作成。
+                <span className="font-semibold">アパレルEC運営（月商300万円）</span> — ①注文メールが来たら自動でスプレッドシートに記録 → ②在庫が少なくなったらSlackに通知 → ③毎週月曜に売上レポートを自動作成。
               </p>
               <p className="text-xs text-gray-500 italic">
                 「週5時間かかってた事務作業がゼロになりました」
@@ -209,7 +209,7 @@ export default function ServicesPage() {
                 <span className="text-gray-400 text-xs">自動化5業務</span>
               </div>
               <p className="text-sm text-gray-700 mb-2">
-                <span className="font-semibold">コンサルタント Cさん</span> — ①メール対応 ②カレンダー管理 ③議事録作成 ④請求書発行 ⑤SNS投稿。全部AIが自動で処理。
+                <span className="font-semibold">経営コンサルタント（独立5年目・顧客15社）</span> — ①メール対応 ②カレンダー管理 ③議事録作成 ④請求書発行 ⑤SNS投稿。全部AIが自動で処理。
               </p>
               <p className="text-xs text-gray-500 italic">
                 「事務スタッフ1人分の仕事をAIが24時間やってくれています」
@@ -448,7 +448,7 @@ export default function ServicesPage() {
           <p className="text-gray-300 text-lg mb-8 text-center">
             まずはお気軽にご相談ください。24時間以内にご返信します。
             <br />
-            <span className="text-sm text-gray-400">※ しつこい営業は一切しません。</span>
+            <span className="text-sm text-gray-400">※ 次のステップはすべてお客様のペースで進めます。</span>
           </p>
           <ContactForm />
         </div>
