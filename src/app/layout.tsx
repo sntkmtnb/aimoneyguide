@@ -6,60 +6,41 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ai-money-guide.com'),
   title: {
-    default: 'AI Money Guide — Turn AI Into Income',
+    default: 'AI Money Guide — OpenClaw構築代行',
     template: '%s | AI Money Guide',
   },
   description:
-    'Your practical guide to making money with AI tools. No hype, just proven strategies, honest tool reviews, and real income reports.',
+    'OpenClawであなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化、カスタムアシスタント。構築から運用まで全部やります。',
   keywords: [
-    'AI side hustles',
-    'make money with AI',
-    'AI tools',
-    'AI freelancing',
-    'passive income AI',
-    'ChatGPT money',
+    'OpenClaw',
+    'AIエージェント',
+    '業務自動化',
+    'チャットボット構築',
+    'AI開発',
+    'OpenClaw構築代行',
   ],
   authors: [{ name: 'AI Money Guide' }],
   creator: 'AI Money Guide',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'ja_JP',
     url: 'https://ai-money-guide.com',
     siteName: 'AI Money Guide',
-    title: 'AI Money Guide — Turn AI Into Income',
+    title: 'AI Money Guide — OpenClaw構築代行',
     description:
-      'Your practical guide to making money with AI tools. No hype, just proven strategies.',
+      'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Money Guide — Turn AI Into Income',
+    title: 'AI Money Guide — OpenClaw構築代行',
     description:
-      'Your practical guide to making money with AI tools. No hype, just proven strategies.',
-    creator: '@aimoneyguide',
+      'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
+    creator: '@ai_money_guide',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
-};
-
-const organizationJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'AI Money Guide',
-  url: 'https://ai-money-guide.com',
-  logo: 'https://ai-money-guide.com/logo.png',
-  sameAs: [
-    'https://twitter.com/aimoneyguide',
-    'https://youtube.com/@aimoneyguide',
-  ],
 };
 
 export default function RootLayout({
@@ -68,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8YX0WD13M" />
         <script
@@ -79,15 +60,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
       </head>
-      <body className="min-h-screen flex flex-col" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+      <body className="min-h-screen flex flex-col" style={{ fontFamily: "'Noto Sans JP', 'Inter', system-ui, sans-serif" }}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -11,33 +11,21 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
+          <Link href="/services" className="flex items-center gap-2 font-bold text-xl">
             <span className="text-primary">AI</span>
             <span className="text-navy">Money Guide</span>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <Link href="/services" className="text-primary font-semibold hover:text-primary-dark transition-colors">
-              Services
-            </Link>
-            <Link href="/start-here" className="text-gray-600 hover:text-primary transition-colors">
-              Start Here
-            </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-primary transition-colors">
-              Blog
-            </Link>
-            <Link href="/resources" className="text-gray-600 hover:text-primary transition-colors">
-              Resources
-            </Link>
-            <Link href="/about" className="text-gray-600 hover:text-primary transition-colors">
-              About
+            <Link href="/services" className="text-gray-600 hover:text-primary transition-colors">
+              サービス
             </Link>
             <Link
-              href="/newsletter"
+              href="/services#contact"
               className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
             >
-              Get Free Guide →
+              無料相談する →
             </Link>
           </nav>
 
@@ -45,7 +33,7 @@ export default function Header() {
           <button
             className="md:hidden p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
+            aria-label="メニュー"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileOpen ? (
@@ -60,27 +48,15 @@ export default function Header() {
         {/* Mobile Nav */}
         {mobileOpen && (
           <nav className="md:hidden py-4 border-t border-gray-100 space-y-3">
-            <Link href="/services" className="block text-primary font-semibold hover:text-primary-dark" onClick={() => setMobileOpen(false)}>
-              Services
-            </Link>
-            <Link href="/start-here" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              Start Here
-            </Link>
-            <Link href="/blog" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              Blog
-            </Link>
-            <Link href="/resources" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              Resources
-            </Link>
-            <Link href="/about" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              About
+            <Link href="/services" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
+              サービス
             </Link>
             <Link
-              href="/newsletter"
+              href="/services#contact"
               className="block bg-primary text-white px-4 py-2 rounded-lg text-center hover:bg-primary-dark"
               onClick={() => setMobileOpen(false)}
             >
-              Get Free Guide →
+              無料相談する →
             </Link>
           </nav>
         )}
