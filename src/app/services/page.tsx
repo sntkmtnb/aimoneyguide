@@ -12,8 +12,9 @@ const services = [
     title: 'AIアシスタント構築',
     price: '30万円〜',
     timeline: '約1週間',
+    tagline: 'まずは1つの業務から',
     description:
-      '1つのツール（Discord、LINE、メール等）と連携するAIアシスタントを作ります。よくある質問への自動回答や、簡単な情報検索ができます。',
+      '1つのツール（LINE、メール等）で1つの仕事を自動化。例：LINEで顧客の質問に自動回答するボット。',
     features: [
       'ツール連携：1つ（Discord or LINE or メール）',
       'よくある質問への自動回答（FAQ登録）',
@@ -26,8 +27,9 @@ const services = [
     title: '業務自動化',
     price: '50万円〜',
     timeline: '約2週間',
+    tagline: '複数の業務をまとめて自動化',
     description:
-      '30万円プランの全機能に加え、複数ツール連携と定期実行タスクを追加。メール→スプレッドシート→通知のような一連の流れを自動化します。',
+      '30万円プランの全機能＋複数ツール連携。例：メールが来たら→内容を判断→スプレッドシートに記録→Slackに通知。',
     features: [
       '30万円プランの全機能を含む',
       'ツール連携：最大3つ（Gmail+Sheets+Slack等）',
@@ -42,8 +44,9 @@ const services = [
     title: 'フルカスタム構築',
     price: '80万円〜',
     timeline: '約3週間',
+    tagline: '業務全体をAIに任せる',
     description:
-      '50万円プランの全機能に加え、ツール数無制限、長期記憶、複数AI連携まで。メールを見て→予定を調整→チームに連絡、のような複雑な判断も自動化。',
+      '50万円プランの全機能＋ツール無制限＋長期記憶。例：メール対応＋カレンダー管理＋SNS投稿＋顧客管理を1つのAIが全部やる。',
     features: [
       '50万円プランの全機能を含む',
       'ツール連携：無制限',
@@ -133,7 +136,10 @@ export default function ServicesPage() {
                     人気No.1
                   </span>
                 )}
-                <h3 className="text-xl font-bold mb-2">{s.title}</h3>
+                <h3 className="text-xl font-bold mb-1">{s.title}</h3>
+                {s.tagline && (
+                  <p className="text-primary text-xs font-semibold mb-3">{s.tagline}</p>
+                )}
                 <p className="text-gray-500 text-sm mb-4">{s.description}</p>
                 <div className="mb-2">
                   <span className="text-3xl font-extrabold">{s.price}</span>
