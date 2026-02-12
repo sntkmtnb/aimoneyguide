@@ -217,6 +217,14 @@ export default function ServicesPage() {
             </div>
           </div>
           <p className="text-xs text-gray-400 text-center mt-6">※ 上記はサービスの活用イメージです</p>
+          <div className="text-center mt-8">
+            <a
+              href="#contact"
+              className="inline-block bg-primary text-white font-semibold px-8 py-3 rounded-xl hover:bg-primary-dark transition-colors"
+            >
+              自分の業務でも使えるか相談する →
+            </a>
+          </div>
         </div>
       </section>
 
@@ -241,10 +249,12 @@ export default function ServicesPage() {
               10万円<span className="text-lg font-normal text-gray-400">/月</span>
             </p>
             <ul className="text-left text-sm text-gray-600 space-y-2 mt-4">
-              <li>✓ AIの動作チェック＆改善</li>
-              <li>✓ 不具合の修正＆アップデート</li>
-              <li>✓ 新しい機能の追加（月2件まで）</li>
-              <li>✓ チャットでの優先サポート</li>
+              <li>✓ 週1回のAI動作チェック＆改善レポート</li>
+              <li>✓ 不具合の修正（48時間以内に対応）</li>
+              <li>✓ 新しい自動化の追加（月2件まで）</li>
+              <li>✓ ツールのアップデート対応</li>
+              <li>✓ チャットでの優先サポート（平日24時間以内返信）</li>
+              <li>✓ いつでも解約OK（縛りなし）</li>
             </ul>
           </div>
         </div>
@@ -383,6 +393,10 @@ export default function ServicesPage() {
               <div className="p-4 border-t font-medium text-gray-700">解約</div>
               <div className="p-4 border-t text-gray-500 text-center">解雇規制あり</div>
               <div className="p-4 border-t text-primary text-center font-semibold">いつでも可能</div>
+
+              <div className="p-4 border-t font-medium text-gray-700">年間コスト</div>
+              <div className="p-4 border-t text-gray-500 text-center">360万円〜<br/><span className="text-xs">（30万×12ヶ月）</span></div>
+              <div className="p-4 border-t text-primary text-center font-semibold">170万円〜<br/><span className="text-xs font-normal text-gray-500">（構築50万+保守10万×12）</span></div>
             </div>
           </div>
         </div>
@@ -404,7 +418,7 @@ export default function ServicesPage() {
               },
               {
                 q: '契約前に詳しく相談できますか？',
-                a: 'はい。15分の無料相談で、あなたの業務に合った提案をいたします。ご納得いただけなければ、契約する必要はまったくありません。しつこい営業も一切しません。',
+                a: 'はい。15分の無料相談で、あなたの業務に合った提案をいたします。ご納得いただけなければ、契約する必要はまったくありません。次のステップはすべてお客様のペースで進めます。',
               },
               {
                 q: 'パソコンに詳しくなくても大丈夫ですか？',
@@ -436,6 +450,20 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Bottom CTA */}
+      <section className="py-12 bg-primary text-white text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-xl font-bold mb-2">まずは15分の無料相談から</p>
+          <p className="text-white/80 text-sm mb-6">あなたの業務に合ったプランをご提案します</p>
+          <a
+            href="#contact"
+            className="inline-block bg-white text-primary font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors"
+          >
+            無料で相談する →
+          </a>
         </div>
       </section>
 
