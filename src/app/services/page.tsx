@@ -171,6 +171,55 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Examples */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-4">導入イメージ</h2>
+          <p className="text-gray-500 text-center mb-10">こんな使い方ができます</p>
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">30万円プラン</span>
+                <span className="text-gray-400 text-xs">自動化1業務</span>
+              </div>
+              <p className="text-sm text-gray-700 mb-2">
+                <span className="font-semibold">美容室オーナー Aさん</span> — LINEで予約の問い合わせが来たら、AIが空き時間を確認して自動で返信。
+              </p>
+              <p className="text-xs text-gray-500 italic">
+                「今まで1日20件の予約電話に出てたのが、LINEで自動完結するようになりました」
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl border border-primary/30 p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">50万円プラン</span>
+                <span className="text-gray-400 text-xs">自動化3業務</span>
+              </div>
+              <p className="text-sm text-gray-700 mb-2">
+                <span className="font-semibold">EC事業者 Bさん</span> — ①注文メールが来たら自動でスプレッドシートに記録 → ②在庫が少なくなったらSlackに通知 → ③毎週月曜に売上レポートを自動作成。
+              </p>
+              <p className="text-xs text-gray-500 italic">
+                「週5時間かかってた事務作業がゼロになりました」
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="bg-gray-100 text-navy text-xs font-bold px-2 py-1 rounded">80万円プラン</span>
+                <span className="text-gray-400 text-xs">自動化5業務</span>
+              </div>
+              <p className="text-sm text-gray-700 mb-2">
+                <span className="font-semibold">コンサルタント Cさん</span> — ①メール対応 ②カレンダー管理 ③議事録作成 ④請求書発行 ⑤SNS投稿。全部AIが自動で処理。
+              </p>
+              <p className="text-xs text-gray-500 italic">
+                「事務スタッフ1人分の仕事をAIが24時間やってくれています」
+              </p>
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 text-center mt-6">※ 上記はサービスの活用イメージです</p>
+        </div>
+      </section>
+
       {/* Additional Options */}
       <section className="pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
