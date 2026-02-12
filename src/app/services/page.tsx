@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
+import Accordion from '@/components/Accordion';
 
 export const metadata: Metadata = {
   title: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
@@ -115,7 +116,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services */}
-      <section className="py-20">
+      <section id="pricing" className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl font-bold text-center mb-4">料金プラン</h2>
           <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">
@@ -303,7 +304,7 @@ export default function ServicesPage() {
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-6 items-start">
-                <span className="text-4xl font-extrabold text-primary/20">
+                <span className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold">
                   {item.step}
                 </span>
                 <div>
@@ -393,7 +394,9 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-center mb-4">人を雇うのと何が違う？</h2>
           <p className="text-gray-500 text-center mb-8">同じ業務を任せた場合の比較です</p>
-          <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+
+          {/* Desktop: table view */}
+          <div className="hidden md:block bg-white rounded-xl border border-gray-200 overflow-hidden">
             <div className="grid grid-cols-3 text-sm">
               <div className="p-4 bg-gray-50 font-semibold text-gray-700"></div>
               <div className="p-4 bg-gray-50 font-semibold text-gray-700 text-center">正社員を雇う</div>
@@ -424,15 +427,48 @@ export default function ServicesPage() {
               <div className="p-4 border-t text-primary text-center font-semibold">170万円〜<br/><span className="text-xs font-normal text-gray-500">（構築50万+保守10万×12）</span></div>
             </div>
           </div>
+
+          {/* Mobile: card view */}
+          <div className="md:hidden space-y-4">
+            {[
+              { label: '月額コスト', human: '30万円〜', humanSub: '給与+社保+交通費', ai: '保守10万円/月', aiSub: '構築費は初回のみ' },
+              { label: '稼働時間', human: '8時間/日', humanSub: '', ai: '24時間365日', aiSub: '' },
+              { label: '立ち上がり', human: '3ヶ月〜', humanSub: '採用+研修', ai: '1〜3週間', aiSub: '' },
+              { label: '退職リスク', human: 'あり', humanSub: '', ai: 'なし', aiSub: '' },
+              { label: '解約', human: '解雇規制あり', humanSub: '', ai: 'いつでも可能', aiSub: '' },
+              { label: '年間コスト', human: '360万円〜', humanSub: '30万×12ヶ月', ai: '170万円〜', aiSub: '構築50万+保守10万×12' },
+            ].map((row) => (
+              <div key={row.label} className="bg-white rounded-xl border border-gray-200 p-4">
+                <p className="text-xs font-semibold text-gray-500 mb-2">{row.label}</p>
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <p className="text-xs text-gray-400 mb-1">正社員</p>
+                    <p className="text-sm text-gray-600">{row.human}</p>
+                    {row.humanSub && <p className="text-xs text-gray-400">{row.humanSub}</p>}
+                  </div>
+                  <div className="bg-primary/5 rounded-lg p-2">
+                    <p className="text-xs text-primary font-semibold mb-1">AI</p>
+                    <p className="text-sm text-primary font-semibold">{row.ai}</p>
+                    {row.aiSub && <p className="text-xs text-gray-500">{row.aiSub}</p>}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-6 bg-green-50 rounded-xl p-4">
+            <p className="text-green-800 font-bold text-lg">年間190万円のコスト削減</p>
+            <p className="text-green-600 text-sm">正社員360万円 → AI170万円</p>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16">
+      <section id="faq" className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-center mb-10">よくある質問</h2>
-          <div className="space-y-6">
-            {[
+          <Accordion
+            items={[
               {
                 q: 'ChatGPTとは何が違うんですか？',
                 a: 'ChatGPTは汎用のチャットツールです。私たちが作るのは、あなたの業務に特化したAIです。あなたのメールやカレンダー、データと連携して、実際に作業をこなします。「ただ喋るだけ」ではありません。',
@@ -465,16 +501,8 @@ export default function ServicesPage() {
                 q: 'OpenClawとは何ですか？',
                 a: 'OpenClawは、AIエージェントを簡単に構築・運用できるオープンソースのプラットフォームです。Discord、LINE、メールなど様々なツールと連携でき、24時間自動で動かすことができます。',
               },
-            ].map((item) => (
-              <div
-                key={item.q}
-                className="bg-white rounded-xl border border-gray-200 p-6"
-              >
-                <h3 className="font-semibold mb-2">{item.q}</h3>
-                <p className="text-gray-500 text-sm">{item.a}</p>
-              </div>
-            ))}
-          </div>
+            ]}
+          />
         </div>
       </section>
 

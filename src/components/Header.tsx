@@ -19,8 +19,11 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <Link href="/services" className="text-gray-600 hover:text-primary transition-colors">
-              サービス
+            <Link href="/services#pricing" className="text-gray-600 hover:text-primary transition-colors">
+              料金プラン
+            </Link>
+            <Link href="/services#faq" className="text-gray-600 hover:text-primary transition-colors">
+              よくある質問
             </Link>
             <Link href="/blog/openclaw-guide" className="text-gray-600 hover:text-primary transition-colors">
               ガイド
@@ -52,8 +55,11 @@ export default function Header() {
         {/* Mobile Nav */}
         {mobileOpen && (
           <nav className="md:hidden py-4 border-t border-gray-100 space-y-3">
-            <Link href="/services" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              サービス
+            <Link href="/services#pricing" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
+              料金プラン
+            </Link>
+            <Link href="/services#faq" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
+              よくある質問
             </Link>
             <Link href="/blog/openclaw-guide" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
               ガイド
