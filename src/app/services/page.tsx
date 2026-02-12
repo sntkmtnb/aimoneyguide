@@ -1,53 +1,53 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AIエージェント開発サービス | AI Money Guide',
+  title: 'OpenClaw構築代行 | AIエージェント開発',
   description:
-    'あなたのビジネスを自動化するAIエージェントを開発します。チャットボット、業務自動化、カスタムAIアシスタント。',
+    'OpenClawであなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化、カスタムアシスタント。構築から運用まで全部やります。',
 };
 
 const services = [
   {
-    title: 'AIチャットボット・アシスタント構築',
+    title: 'OpenClaw AIアシスタント構築',
     price: '30万円',
     timeline: '1週間',
     description:
-      'あなたのFAQ・マニュアル・対応履歴をAIに学習させ、24時間自動で顧客対応。OpenClaw/ChatGPTベースで、Discord/Slack/LINE等と連携する専用アシスタントを構築します。',
+      '今注目のOpenClawで、あなた専用のAIアシスタントを構築。Discord/Slack/LINE/メールと連携し、24時間あなたの代わりに働く「デジタル社員」を作ります。',
     features: [
-      'OpenAI/Claude APIベースのカスタムチャットボット',
-      'RAG構成（あなたのデータをベクトルDBに格納）',
-      'Webウィジェット / LINE / Slack / Discord連携',
-      '回答できない質問は担当者にメール通知',
-      '技術: OpenClaw + Next.js + LLM API + Pinecone/Supabase',
+      'OpenClawのセットアップ＆VPSサーバー構築',
+      'あなた専用の性格・知識設定（SOUL.md）',
+      'Discord / Slack / LINE / メール連携',
+      'スキル追加（カレンダー、検索、FAQ対応等）',
+      'カスタムcronジョブで定期タスク自動実行',
     ],
   },
   {
-    title: '業務自動化エージェント',
+    title: 'OpenClaw 業務自動化エージェント',
     price: '50万円',
     timeline: '2週間',
     description:
-      'メール自動返信、データ入力・集計、SNS運用——繰り返し作業をAIエージェントが自律的に処理します。VPS上で24時間稼働。',
+      'メール自動返信、データ入力・集計、SNS運用——繰り返し作業をOpenClawエージェントが自律的に処理。VPS上で24時間稼働します。',
     features: [
-      'LangChain/OpenClawベースの自律型AIエージェント',
+      'OpenClawベースの自律型AIエージェント',
       'Gmail/Outlook/Google Sheets/Notion等とAPI連携',
       'cronスケジューラーで定期実行（VPS 24時間稼働）',
       'エラー時はSlack/メールで即通知',
-      '技術: Node.js/Python + LLM + 各種API連携',
+      'RAG構成であなたのデータを学習',
     ],
     popular: true,
   },
   {
-    title: 'フルカスタムAIアシスタント',
+    title: 'OpenClaw フルカスタム構築',
     price: '80万円',
     timeline: '3週間',
     description:
-      '複数ツールを横断して判断・実行する「デジタル社員」。メールを見て→カレンダー確認→Slack通知まで全自動。',
+      '複数エージェント連携、独自スキル開発、運用設計まで。メールを見て→カレンダー確認→Slack通知まで全自動の「デジタル社員」。',
     features: [
       'チャットボット＋自動化の全機能を統合',
       '長期記憶（会話の文脈を記憶・学習）',
-      'マルチツール横断ワークフロー',
+      '複数エージェント連携＆独自スキル開発',
       'カスタム性格・ブランドボイス設計',
-      '技術: OpenClaw + RAG + カスタムスキル + 複数エージェント連携',
+      '運用設計＆優先サポート付き',
     ],
   },
 ];
@@ -59,17 +59,17 @@ export default function ServicesPage() {
       <section className="bg-navy text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-primary font-semibold mb-4 text-sm uppercase tracking-wide">
-            AIエージェント開発
+            OpenClaw構築代行
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            あなたの代わりに
+            OpenClawで
             <br />
-            <span className="text-primary">24時間働くAI</span>
+            <span className="text-primary">デジタル社員を雇う</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
-            「わかりません」としか言わないチャットボットではありません。
+            Discord、LINE、メール——あなたの代わりに24時間対応するAIエージェントを構築します。
             <br />
-            実際にタスクをこなすAIエージェントを、あなたのビジネスに合わせて構築します。
+            技術知識ゼロでOK。構築から運用まで全部やります。
           </p>
           <a
             href="mailto:hello@ai-money-guide.com?subject=AIエージェント開発のご相談"
