@@ -8,32 +8,17 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: 'OpenClaw AIアシスタント構築',
-    price: '20万円',
-    timeline: '5日',
-    description:
-      '今話題のOpenClawで、あなた専用のAIアシスタントを構築。Discord/Slack/LINE等と連携し、24時間あなたの代わりに働く相棒を作ります。',
-    features: [
-      'OpenClawのセットアップ＆VPSサーバー構築',
-      'あなた専用の性格・知識設定（SOUL.md）',
-      'Discord/Slack/LINE/メール連携',
-      'スキル追加（カレンダー、SNS投稿、検索等）',
-      'カスタムcronジョブで定期タスク自動実行',
-    ],
-    popular: true,
-  },
-  {
-    title: 'AIチャットボット構築',
+    title: 'AIチャットボット・アシスタント構築',
     price: '30万円',
     timeline: '1週間',
     description:
-      'あなたのFAQ・マニュアル・対応履歴をAIに学習させ、24時間自動で顧客対応するチャットボットを構築します。',
+      'あなたのFAQ・マニュアル・対応履歴をAIに学習させ、24時間自動で顧客対応。OpenClaw/ChatGPTベースで、Discord/Slack/LINE等と連携する専用アシスタントを構築します。',
     features: [
       'OpenAI/Claude APIベースのカスタムチャットボット',
       'RAG構成（あなたのデータをベクトルDBに格納）',
-      'Webウィジェット埋め込み or LINE/Slack連携',
+      'Webウィジェット / LINE / Slack / Discord連携',
       '回答できない質問は担当者にメール通知',
-      '技術: Next.js + LLM API + Pinecone/Supabase',
+      '技術: OpenClaw + Next.js + LLM API + Pinecone/Supabase',
     ],
   },
   {
@@ -41,17 +26,18 @@ const services = [
     price: '50万円',
     timeline: '2週間',
     description:
-      'メール自動返信、データ入力・集計、SNS運用——繰り返し作業をAIエージェントが自律的に処理します。',
+      'メール自動返信、データ入力・集計、SNS運用——繰り返し作業をAIエージェントが自律的に処理します。VPS上で24時間稼働。',
     features: [
-      'LangChainベースの自律型AIエージェント',
+      'LangChain/OpenClawベースの自律型AIエージェント',
       'Gmail/Outlook/Google Sheets/Notion等とAPI連携',
       'cronスケジューラーで定期実行（VPS 24時間稼働）',
       'エラー時はSlack/メールで即通知',
       '技術: Node.js/Python + LLM + 各種API連携',
     ],
+    popular: true,
   },
   {
-    title: 'カスタムAIアシスタント',
+    title: 'フルカスタムAIアシスタント',
     price: '80万円',
     timeline: '3週間',
     description:
@@ -61,7 +47,7 @@ const services = [
       '長期記憶（会話の文脈を記憶・学習）',
       'マルチツール横断ワークフロー',
       'カスタム性格・ブランドボイス設計',
-      '技術: OpenClaw + RAG + カスタムスキル',
+      '技術: OpenClaw + RAG + カスタムスキル + 複数エージェント連携',
     ],
   },
 ];
@@ -125,7 +111,7 @@ export default function ServicesPage() {
           <p className="text-gray-500 text-center mb-12 max-w-xl mx-auto">
             テンプレートではありません。すべてあなたのビジネスに合わせたカスタム構築です。
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((s) => (
               <div
                 key={s.title}
