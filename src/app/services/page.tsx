@@ -184,6 +184,21 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Mid CTA */}
+      <section className="py-12 bg-primary text-white text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <p className="text-lg font-semibold mb-4">
+            どのプランが合うかわからない？
+          </p>
+          <a
+            href="#contact"
+            className="inline-block bg-white text-primary font-semibold px-8 py-3 rounded-xl hover:bg-gray-100 transition-colors"
+          >
+            無料で相談して決める →
+          </a>
+        </div>
+      </section>
+
       {/* How It Works */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
@@ -272,8 +287,43 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Comparison */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-4">人を雇うのと何が違う？</h2>
+          <p className="text-gray-500 text-center mb-8">同じ業務を任せた場合の比較です</p>
+          <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+            <div className="grid grid-cols-3 text-sm">
+              <div className="p-4 bg-gray-50 font-semibold text-gray-700"></div>
+              <div className="p-4 bg-gray-50 font-semibold text-gray-700 text-center">正社員を雇う</div>
+              <div className="p-4 bg-primary/10 font-semibold text-primary text-center">AIエージェント</div>
+
+              <div className="p-4 border-t font-medium text-gray-700">月額コスト</div>
+              <div className="p-4 border-t text-gray-500 text-center">30万円〜<br/><span className="text-xs">（給与+社保+交通費）</span></div>
+              <div className="p-4 border-t text-primary text-center font-semibold">保守10万円/月<br/><span className="text-xs font-normal text-gray-500">（構築費は初回のみ）</span></div>
+
+              <div className="p-4 border-t font-medium text-gray-700">稼働時間</div>
+              <div className="p-4 border-t text-gray-500 text-center">8時間/日</div>
+              <div className="p-4 border-t text-primary text-center font-semibold">24時間365日</div>
+
+              <div className="p-4 border-t font-medium text-gray-700">立ち上がり</div>
+              <div className="p-4 border-t text-gray-500 text-center">3ヶ月〜<br/><span className="text-xs">（採用+研修）</span></div>
+              <div className="p-4 border-t text-primary text-center font-semibold">1〜3週間</div>
+
+              <div className="p-4 border-t font-medium text-gray-700">退職リスク</div>
+              <div className="p-4 border-t text-gray-500 text-center">あり</div>
+              <div className="p-4 border-t text-primary text-center font-semibold">なし</div>
+
+              <div className="p-4 border-t font-medium text-gray-700">解約</div>
+              <div className="p-4 border-t text-gray-500 text-center">解雇規制あり</div>
+              <div className="p-4 border-t text-primary text-center font-semibold">いつでも可能</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-center mb-10">よくある質問</h2>
           <div className="space-y-6">
