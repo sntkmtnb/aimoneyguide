@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const WEBHOOK_URL =
+const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL || 
   'https://discord.com/api/webhooks/1471516970858840086/cmDNAWvApLAwXIGQ7Bb6v0G3sJqj0DJ55GpYpcHVe_bFYUAYGiqp7Bc18CBWqJkDSJkB';
 
 export async function POST(req: NextRequest) {
