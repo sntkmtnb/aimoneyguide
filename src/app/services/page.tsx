@@ -12,7 +12,7 @@ const services = [
     title: 'AIアシスタント構築',
     price: '30万円〜',
     timeline: '約1週間',
-    tagline: '自動化を1つ',
+    tagline: '自動化 1業務',
     description:
       '1つの業務をAIで自動化します。例：LINEの問い合わせに自動回答、メールの自動分類など。',
     features: [
@@ -27,11 +27,11 @@ const services = [
     title: '業務自動化パック',
     price: '50万円〜',
     timeline: '約2週間',
-    tagline: '自動化を最大5つ',
+    tagline: '自動化 最大3業務',
     description:
-      '複数の業務をまとめて自動化。例：①メール自動返信 ②スプレッドシート記録 ③Slack通知 ④日次レポート ⑤SNS投稿',
+      '複数の業務をまとめて自動化。例：①メール自動返信 ②スプレッドシート記録 ③Slack通知',
     features: [
-      '自動化する業務：最大5つ',
+      '自動化する業務：最大3つ',
       'ツール連携：最大3つ（Gmail+Sheets+Slack等）',
       '定期実行タスク（日次レポート、週次集計等）',
       'メールの自動分類・下書き作成',
@@ -44,11 +44,11 @@ const services = [
     title: 'フルカスタム構築',
     price: '80万円〜',
     timeline: '約3週間',
-    tagline: '自動化を最大10個＋長期記憶',
+    tagline: '自動化 最大5業務＋長期記憶',
     description:
       '業務全体をAIに任せる。例：メール対応＋カレンダー管理＋SNS投稿＋顧客管理＋レポート作成を1つのAIが担当。',
     features: [
-      '自動化する業務：最大10個',
+      '自動化する業務：最大5つ',
       'ツール連携：最大5つ',
       '長期記憶（過去のやり取りを記憶して賢くなる）',
       '複数AIの連携（役割分担して協力）',
@@ -168,6 +168,15 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Additional Options */}
+      <section className="pb-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-gray-500 text-sm">
+            ※ 上限を超える業務の追加：<span className="font-semibold text-navy">1業務あたり＋10万円</span>
+          </p>
         </div>
       </section>
 
