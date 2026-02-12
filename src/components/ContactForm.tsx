@@ -41,7 +41,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto">
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
+        <label className="block text-sm font-semibold text-gray-300 mb-1">
           お名前 <span className="text-red-500">*</span>
         </label>
         <input
@@ -50,11 +50,11 @@ export default function ContactForm() {
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
           placeholder="山田太郎"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-900"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white text-gray-900"
         />
       </div>
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
+        <label className="block text-sm font-semibold text-gray-300 mb-1">
           メールアドレス <span className="text-red-500">*</span>
         </label>
         <input
@@ -63,11 +63,11 @@ export default function ContactForm() {
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           placeholder="example@mail.com"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none text-gray-900"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none bg-white text-gray-900"
         />
       </div>
       <div>
-        <label className="block text-sm font-semibold text-gray-700 mb-1">
+        <label className="block text-sm font-semibold text-gray-300 mb-1">
           ご相談内容 <span className="text-red-500">*</span>
         </label>
         <textarea
@@ -76,7 +76,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           placeholder="例: 顧客対応を自動化したい、SNS運用をAIに任せたい、など"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none resize-none text-gray-900"
+          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none resize-none bg-white text-gray-900"
         />
       </div>
       <button
