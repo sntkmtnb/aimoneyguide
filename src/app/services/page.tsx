@@ -229,7 +229,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Additional Options */}
-      <section className="pb-8">
+      <section className="pb-8 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-gray-500 text-sm">
             ※ 上限を超える業務の追加：<span className="font-semibold text-navy">1業務あたり＋10万円</span>
