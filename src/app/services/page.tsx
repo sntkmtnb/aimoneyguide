@@ -63,14 +63,14 @@ export default function ServicesPage() {
             OpenClaw 構築代行
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
-            あなたの業務を
+            雑務に追われる毎日、
             <br />
-            <span className="text-primary">AIが24時間代行します</span>
+            <span className="text-primary">終わりにしませんか？</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
             メール対応、データ入力、SNS運用——
             <br />
-            繰り返しの作業は、もうAIに任せませんか？
+            毎日の繰り返し作業を、AIが24時間あなたの代わりにこなします。
             <br />
             <span className="text-white font-semibold">技術知識は一切不要。構築から運用まで、すべてお任せください。</span>
           </p>
@@ -90,20 +90,20 @@ export default function ServicesPage() {
           <p className="text-gray-500 text-sm mb-4">安心してご利用いただける理由</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div>
+              <p className="text-2xl font-bold text-navy">24時間365日</p>
+              <p className="text-gray-500 text-xs">休まず稼働</p>
+            </div>
+            <div>
+              <p className="text-2xl font-bold text-navy">追加人件費¥0</p>
+              <p className="text-gray-500 text-xs">固定コストで運用</p>
+            </div>
+            <div>
               <p className="text-2xl font-bold text-navy">30日間</p>
-              <p className="text-gray-500 text-xs">返金保証</p>
+              <p className="text-gray-500 text-xs">全額返金保証</p>
             </div>
             <div>
-              <p className="text-2xl font-bold text-navy">24時間</p>
-              <p className="text-gray-500 text-xs">AIが休まず稼働</p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-navy">毎日</p>
-              <p className="text-gray-500 text-xs">進捗を共有</p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold text-navy">SSL暗号化</p>
-              <p className="text-gray-500 text-xs">データ通信を保護</p>
+              <p className="text-2xl font-bold text-navy">月5社限定</p>
+              <p className="text-gray-500 text-xs">丁寧な構築のため</p>
             </div>
           </div>
         </div>
@@ -246,8 +246,34 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Use Cases */}
       <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-4">活用例</h2>
+          <p className="text-gray-500 text-center mb-10">さまざまな業種でお使いいただけます</p>
+          <div className="grid md:grid-cols-2 gap-4">
+            {[
+              { icon: '🏪', industry: 'EC・小売', example: '注文確認メールの自動送信、在庫アラート、カゴ落ちフォロー' },
+              { icon: '🏢', industry: 'コンサル・士業', example: 'クライアント対応の自動化、レポートの定期配信' },
+              { icon: '🏥', industry: 'クリニック・サロン', example: '予約受付、リマインダー送信、アフターフォロー' },
+              { icon: '🎓', industry: '教育・スクール', example: '生徒からの質問に自動回答、出欠管理' },
+              { icon: '🏗', industry: '建設・製造', example: '日報の自動集計、資材発注のアラート' },
+              { icon: '💼', industry: 'フリーランス', example: 'メール返信、請求書管理、SNS投稿の自動化' },
+            ].map((item) => (
+              <div key={item.industry} className="bg-white rounded-xl border border-gray-200 p-5 flex gap-4">
+                <span className="text-2xl">{item.icon}</span>
+                <div>
+                  <p className="font-semibold text-sm text-navy">{item.industry}</p>
+                  <p className="text-gray-500 text-sm mt-1">{item.example}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl font-bold text-center mb-10">よくある質問</h2>
           <div className="space-y-6">
@@ -271,6 +297,14 @@ export default function ServicesPage() {
               {
                 q: 'データのセキュリティは大丈夫ですか？',
                 a: 'はい。通信はすべてSSLで暗号化されています。お預かりしたデータは厳重に管理し、第三者に提供することは一切ありません。ご希望があれば秘密保持契約（NDA）も締結します。',
+              },
+              {
+                q: '返金保証の条件は？',
+                a: '納品後30日以内に「期待した効果が出ない」と判断された場合、全額返金します。具体的には、AIエージェントが仕様通りに動作しない場合が対象です。返金手続きはフォームからご連絡いただくだけで完了します。',
+              },
+              {
+                q: '最低契約期間はありますか？',
+                a: 'ありません。月額保守サポートはいつでも解約可能です。構築費用は一括払いで、追加の縛りは一切ありません。',
               },
               {
                 q: 'OpenClawとは何ですか？',
