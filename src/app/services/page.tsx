@@ -13,13 +13,13 @@ const services = [
     price: '30万円〜',
     timeline: '約1週間',
     description:
-      'あなた専用のAIアシスタントを作ります。Discord・LINE・メールなど、普段お使いのツールと連携して、24時間自動で対応します。',
+      '1つのツール（Discord、LINE、メール等）と連携するAIアシスタントを作ります。よくある質問への自動回答や、簡単な情報検索ができます。',
     features: [
-      'あなた専用のAIアシスタントを構築',
-      '性格・知識・話し方をカスタマイズ',
-      'Discord / LINE / メールと連携',
-      'よくある質問への自動回答',
-      'スケジュール管理や検索もおまかせ',
+      'ツール連携：1つ（Discord or LINE or メール）',
+      'よくある質問への自動回答（FAQ登録）',
+      'あなた専用の性格・話し方に設定',
+      '簡単な情報検索（Web検索、社内資料）',
+      '納品後1週間の調整サポート付き',
     ],
   },
   {
@@ -27,13 +27,14 @@ const services = [
     price: '50万円〜',
     timeline: '約2週間',
     description:
-      'メールの返信、データ入力、SNS投稿など——毎日の繰り返し作業をAIが自動でこなします。サーバー上で24時間休まず動きます。',
+      '30万円プランの全機能に加え、複数ツール連携と定期実行タスクを追加。メール→スプレッドシート→通知のような一連の流れを自動化します。',
     features: [
+      '30万円プランの全機能を含む',
+      'ツール連携：最大3つ（Gmail+Sheets+Slack等）',
+      '定期実行タスク（日次レポート、週次集計等）',
       'メールの自動分類・下書き作成',
-      'スプレッドシートへの自動入力・集計',
-      'SNSの定期投稿・返信',
-      'エラーが起きたら即通知',
-      '24時間365日、自動で稼働',
+      'SNSの定期投稿・返信の自動化',
+      'エラー時のSlack/メール即通知',
     ],
     popular: true,
   },
@@ -42,13 +43,14 @@ const services = [
     price: '80万円〜',
     timeline: '約3週間',
     description:
-      '複数のツールをまたいで判断・実行する「デジタル社員」。メールを確認→予定を調整→チームに連絡、まで全自動。',
+      '50万円プランの全機能に加え、ツール数無制限、長期記憶、複数AI連携まで。メールを見て→予定を調整→チームに連絡、のような複雑な判断も自動化。',
     features: [
-      '上記すべての機能を統合',
-      '会話の内容を記憶して成長するAI',
-      '複数ツールをまたいだ自動ワークフロー',
+      '50万円プランの全機能を含む',
+      'ツール連携：無制限',
+      '長期記憶（過去の会話・対応を記憶して成長）',
+      '複数AIの連携（役割分担して協力）',
       'あなたのブランドに合った話し方・性格設計',
-      '運用設計＆優先サポート付き',
+      '運用設計書＆優先サポート付き（納品後1ヶ月）',
     ],
   },
 ];
@@ -394,9 +396,7 @@ export default function ServicesPage() {
           <h2 className="text-lg font-bold mb-6 text-center">運営者情報</h2>
           <div className="bg-white rounded-xl border border-gray-200 p-6 text-sm text-gray-600 space-y-2">
             <p><span className="font-semibold text-gray-800">サービス名：</span>AI Money Guide</p>
-            <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（篠塚基伸 個人事業）</p>
-            <p><span className="font-semibold text-gray-800">運営母体：</span><a href="https://newhello.jp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp</a></p>
-            <p><span className="font-semibold text-gray-800">事業内容：</span>ソフトウェア開発・AIエージェント構築</p>
+            <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（<a href="https://newhello.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp/</a>）</p>
             <p><span className="font-semibold text-gray-800">お問い合わせ：</span>上記フォームよりお願いします</p>
             <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@ai_money_guide</a></p>
           </div>
