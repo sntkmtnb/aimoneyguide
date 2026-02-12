@@ -32,6 +32,10 @@ export default function TokushohoPage() {
             <p>お問い合わせフォームよりご連絡ください</p>
           </div>
           <div>
+            <p className="font-semibold text-gray-900 mb-1">サービス名</p>
+            <p>OpenClaw構築代行 by NEWHELLO</p>
+          </div>
+          <div>
             <p className="font-semibold text-gray-900 mb-1">販売URL</p>
             <p>https://ai-money-guide.com</p>
           </div>

@@ -6,11 +6,11 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ai-money-guide.com'),
   title: {
-    default: 'AI Money Guide — OpenClaw構築代行',
-    template: '%s | AI Money Guide',
+    default: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
+    template: '%s | OpenClaw構築代行 by NEWHELLO',
   },
   description:
-    'OpenClawであなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化、カスタムアシスタント。構築から運用まで全部やります。',
+    'NEWHELLOのOpenClaw構築代行。あなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
   keywords: [
     'OpenClaw',
     'AIエージェント',

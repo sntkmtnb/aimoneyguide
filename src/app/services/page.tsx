@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'OpenClaw構築代行 | AIエージェント開発',
+  title: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
   description:
-    'OpenClawであなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
+    'NEWHELLOのOpenClaw構築代行。あなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
 };
 
 const services = [
@@ -487,7 +487,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-lg font-bold mb-6 text-center">運営者情報</h2>
           <div className="bg-white rounded-xl border border-gray-200 p-6 text-sm text-gray-600 space-y-2">
-            <p><span className="font-semibold text-gray-800">サービス名：</span>AI Money Guide</p>
+            <p><span className="font-semibold text-gray-800">サービス名：</span>OpenClaw構築代行 by NEWHELLO</p>
             <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（<a href="https://newhello.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp/</a>）</p>
             <p><span className="font-semibold text-gray-800">お問い合わせ：</span>上記フォームよりお願いします</p>
             <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@ai_money_guide</a></p>
