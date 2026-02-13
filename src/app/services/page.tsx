@@ -549,6 +549,17 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+      {/* Mobile Sticky CTA */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
+        <a
+          href="#contact"
+          className="block w-full bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-4 text-lg shadow-[0_-4px_12px_rgba(0,0,0,0.15)] transition-colors"
+        >
+          無料で相談する →
+        </a>
+      </div>
+      {/* Spacer for sticky CTA on mobile */}
+      <div className="h-16 md:hidden" />
     </div>
   );
 }
