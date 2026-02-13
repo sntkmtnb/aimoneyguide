@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/services" className="text-xl font-bold text-white">
-              <span className="text-primary">OpenClaw構築代行</span> <span className="text-gray-400 text-sm font-normal">by</span> NEWHELLO
+              <span className="text-primary">OpenClaw構築代行</span>
             </Link>
             <p className="mt-3 text-sm text-gray-400">
               OpenClawでAIエージェントを構築。あなたの業務を24時間自動化します。
