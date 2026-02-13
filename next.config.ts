@@ -8,6 +8,18 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: '/', destination: '/services', permanent: false },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'ai-money-guide.com' }],
+        destination: 'https://openclaw.newhello.jp/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.ai-money-guide.com' }],
+        destination: 'https://openclaw.newhello.jp/:path*',
+        permanent: true,
+      },
     ];
   },
   async headers() {
