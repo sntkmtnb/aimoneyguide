@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import Accordion from '@/components/Accordion';
 
 export const metadata: Metadata = {
-  title: 'OpenClaw構築代行 | AIエージェント開発',
+  title: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
   description:
     'NEWHELLOのOpenClaw構築代行。あなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
 };

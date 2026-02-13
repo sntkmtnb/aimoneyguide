@@ -13,6 +13,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/services" className="font-bold text-lg">
             <span className="text-primary">OpenClaw構築代行</span>
+            <span className="text-gray-400 text-xs ml-1">by NEWHELLO</span>
           </Link>
 
           {/* Desktop Nav */}

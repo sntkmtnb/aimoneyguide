@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://aimoneyguide.com',
+  siteUrl: 'https://openclaw.newhello.jp',
   generateRobotsTxt: true,
   sitemapSize: 5000,
   changefreq: 'weekly',
