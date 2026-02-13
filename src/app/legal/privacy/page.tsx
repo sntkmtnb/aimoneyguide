@@ -10,7 +10,7 @@ export default function PrivacyPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <h1 className="text-3xl font-bold mb-8">プライバシーポリシー</h1>
         <div className="bg-white rounded-xl border border-gray-200 p-8 space-y-6 text-sm text-gray-700 leading-relaxed">
-          <p>OpenClaw構築代行 by NEWHELLO（以下「当サービス」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定めます。</p>
+          <p>OpenClaw構築代行（以下「当サービス」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定めます。</p>
 
           <div>
             <h2 className="font-bold text-gray-900 text-base mb-2">1. 収集する情報</h2>

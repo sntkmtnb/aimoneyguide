@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm';
 import Accordion from '@/components/Accordion';
 
 export const metadata: Metadata = {
-  title: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
+  title: 'OpenClaw構築代行 | AIエージェント開発',
   description:
     'NEWHELLOのOpenClaw構築代行。あなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
 };
@@ -540,7 +540,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-lg font-bold mb-6 text-center">運営者情報</h2>
           <div className="bg-white rounded-xl border border-gray-200 p-6 text-sm text-gray-600 space-y-2">
-            <p><span className="font-semibold text-gray-800">サービス名：</span>OpenClaw構築代行 by NEWHELLO</p>
+            <p><span className="font-semibold text-gray-800">サービス名：</span>OpenClaw構築代行</p>
             <p><span className="font-semibold text-gray-800">運営：</span>NEWHELLO（<a href="https://newhello.jp/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://newhello.jp/</a>）</p>
             <p><span className="font-semibold text-gray-800">代表：</span>篠塚 基伸</p>
             <p><span className="font-semibold text-gray-800">事業内容：</span>AIエージェント開発・業務自動化の設計と構築</p>

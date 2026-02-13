@@ -33,7 +33,7 @@ export default function TokushohoPage() {
           </div>
           <div>
             <p className="font-semibold text-gray-900 mb-1">サービス名</p>
-            <p>OpenClaw構築代行 by NEWHELLO</p>
+            <p>OpenClaw構築代行</p>
           </div>
           <div>
             <p className="font-semibold text-gray-900 mb-1">販売URL</p>

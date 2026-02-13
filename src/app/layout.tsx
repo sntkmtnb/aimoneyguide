@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ai-money-guide.com'),
   title: {
-    default: 'OpenClaw構築代行 by NEWHELLO | AIエージェント開発',
-    template: '%s | OpenClaw構築代行 by NEWHELLO',
+    default: 'OpenClaw構築代行 | AIエージェント開発',
+    template: '%s | OpenClaw構築代行',
   },
   description:
     'NEWHELLOのOpenClaw構築代行。あなた専用のAIエージェントを構築。Discord/LINE/メール連携、業務自動化。構築から運用まで全部やります。',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ja_JP',
     url: 'https://ai-money-guide.com',
-    siteName: 'OpenClaw構築代行 by NEWHELLO',
-    title: 'OpenClaw構築代行 by NEWHELLO',
+    siteName: 'OpenClaw構築代行',
+    title: 'OpenClaw構築代行',
     description:
       'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
     images: [
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
         url: 'https://ai-money-guide.com/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'OpenClaw構築代行 by NEWHELLO — AIがあなたの業務を24時間自動化',
+        alt: 'OpenClaw構築代行 — AIがあなたの業務を24時間自動化',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'OpenClaw構築代行 by NEWHELLO',
+    title: 'OpenClaw構築代行',
     description:
       'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
     creator: '@ai_money_guide',
