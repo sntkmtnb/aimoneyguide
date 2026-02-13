@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'what-is-openclaw',
+    title: 'OpenClawとは？ChatGPTとの違いをわかりやすく解説',
+    description: 'ChatGPTは「聞けば答えるAI」、OpenClawは「自分で考えて動くAI」。その違いと導入メリットを中小企業向けに解説。',
+    date: '2026年2月13日',
+    tags: ['OpenClaw', 'ChatGPT', '入門'],
+  },
+  {
     slug: 'ai-cost-comparison',
     title: '人を雇う vs AIエージェント｜中小企業が知るべきコスト比較',
     description: '事務スタッフ採用とAIエージェント導入のコストを徹底比較。3年間で880万円の差。',
