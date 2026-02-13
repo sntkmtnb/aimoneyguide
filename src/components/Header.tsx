@@ -11,9 +11,10 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/services" className="font-bold text-lg">
+          <Link href="/services" className="flex items-center gap-1 font-bold text-lg">
             <span className="text-primary">OpenClaw構築代行</span>
-            <span className="text-gray-400 text-xs ml-1">by NEWHELLO</span>
+            <span className="text-gray-400 text-sm font-normal">by</span>
+            <span className="text-navy">NEWHELLO</span>
           </Link>
 
           {/* Desktop Nav */}
