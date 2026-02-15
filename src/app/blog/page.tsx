@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'chatbot-cost',
+    title: 'チャットボット導入費用の相場｜SaaS vs 自社開発、結局どっちが安い？',
+    description: 'チャットボットの導入費用を徹底比較。SaaS型の月額費用、AI搭載型の初期費用、自社専用開発のコスト。3年間のトータルで見ると意外な結果に。',
+    date: '2026年2月15日',
+    tags: ['チャットボット', 'コスト比較', '中小企業'],
+  },
+  {
     slug: 'what-is-openclaw',
     title: 'OpenClawとは？ChatGPTとの違いをわかりやすく解説',
     description: 'ChatGPTは「聞けば答えるAI」、OpenClawは「自分で考えて動くAI」。その違いと導入メリットを中小企業向けに解説。',
