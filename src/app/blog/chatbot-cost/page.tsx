@@ -62,6 +62,9 @@ export default function ChatbotCostPage() {
           <strong>月額1,500円〜100万円以上</strong>
           と幅が広く、比較が難しいのが実情です。
         </p>
+        <p className="text-sm text-gray-500">
+          ※この記事は、AI業務自動化の構築支援を行うNEWHELLOが執筆しています。
+        </p>
         <p>
           この記事では、チャットボットの3つの導入方法を<strong>費用・特徴・向いている企業</strong>
           の観点から比較し、あなたの会社に最適な選択肢を解説します。
@@ -162,7 +165,7 @@ export default function ChatbotCostPage() {
         </p>
         <ul>
           <li>初期費用: 20〜50万円</li>
-          <li>月額費用: 3,000円〜1万円（API利用料のみ）</li>
+          <li>月額費用: 3,000円〜1万円（API利用料のみ）※Claude/GPT APIの従量課金。月間1,000件程度の問い合わせで約3,000〜8,000円が目安</li>
           <li>向いている: 自社の業務に特化した対応が必要な中小企業</li>
         </ul>
 
@@ -212,6 +215,7 @@ export default function ChatbotCostPage() {
                 <td className="border border-gray-300 px-3 py-2 text-center">10〜50万円</td>
                 <td className="border border-gray-300 px-3 py-2 text-center bg-orange-50 font-bold">
                   3,000円〜1万円
+                  <span className="block text-xs font-normal text-gray-500">※API従量課金のみ</span>
                 </td>
               </tr>
               <tr>
