@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'gas-gemini-automation',
+    title: 'Google Workspace×AIで業務を自動化する方法｜GAS+Gemini活用ガイド',
+    description: 'GAS+Gemini APIで業務自動化。メール返信、データ集計、承認フロー、議事録要約の5パターンを具体例付きで解説。',
+    date: '2026年2月15日',
+    tags: ['Google Workspace', 'GAS', 'Gemini', '活用ガイド'],
+  },
+  {
     slug: 'chatbot-cost',
     title: 'チャットボット導入費用の相場｜SaaS vs 自社開発、結局どっちが安い？',
     description: 'チャットボットの導入費用を徹底比較。SaaS型の月額費用、AI搭載型の初期費用、自社専用開発のコスト。3年間のトータルで見ると意外な結果に。',
