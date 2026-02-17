@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'line-ai-chatbot',
+    title: 'LINE公式アカウントにAI自動応答を導入する方法｜Webhook×Claude API実践ガイド',
+    description: 'LINE Messaging APIとClaude APIでAI自動応答を実装。美容室・クリニック・ECの活用例付き。コード全文で解説。',
+    date: '2026年2月17日',
+    tags: ['LINE', 'Claude API', 'チャットボット'],
+  },
+  {
     slug: 'x-auto-posting',
     title: 'X(Twitter)の投稿・引用RTをAIで自動化する方法｜Python×API実践ガイド',
     description: 'X APIとAIを組み合わせて、引用RT・リプライを自動化。キュレーション型SNS運用をコード全文付きで解説。',
