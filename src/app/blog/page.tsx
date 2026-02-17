@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'booking-calendar-automation',
+    title: '予約管理をGoogleカレンダーで自動化する方法｜GAS×フォーム実践ガイド',
+    description: 'Googleフォーム+GAS+カレンダーで予約管理を完全自動化。ダブルブッキング防止、確認メール、リマインダーまで。費用ゼロ。',
+    date: '2026年2月17日',
+    tags: ['予約管理', 'Googleカレンダー', 'GAS'],
+  },
+  {
     slug: 'line-ai-chatbot',
     title: 'LINE公式アカウントにAI自動応答を導入する方法｜Webhook×Claude API実践ガイド',
     description: 'LINE Messaging APIとClaude APIでAI自動応答を実装。美容室・クリニック・ECの活用例付き。コード全文で解説。',
