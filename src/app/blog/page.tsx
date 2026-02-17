@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'ai-auto-reply-bot',
+    title: 'Claude APIで問い合わせ自動返信botを作る方法｜Discord×AI実践ガイド',
+    description: 'Discord Webhookで届いた問い合わせに、Claude APIで自動返信。一次返信の自動化で対応速度を劇的に改善。コード全文付き。',
+    date: '2026年2月17日',
+    tags: ['Claude API', 'AI自動化', 'ハンズオン'],
+  },
+  {
     slug: 'contact-form-discord',
     title: '問い合わせフォーム→Discord自動通知の作り方｜Next.js×Webhook実践ガイド',
     description: 'Webサイトの問い合わせフォームからDiscordに自動通知する仕組みを実装。コード全文＋設定手順付きで、コピペで動く実践ガイド。',
