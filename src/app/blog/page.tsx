@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'x-auto-posting',
+    title: 'X(Twitter)の投稿・引用RTをAIで自動化する方法｜Python×API実践ガイド',
+    description: 'X APIとAIを組み合わせて、引用RT・リプライを自動化。キュレーション型SNS運用をコード全文付きで解説。',
+    date: '2026年2月17日',
+    tags: ['X/Twitter', 'Python', 'SNS自動化'],
+  },
+  {
     slug: 'ai-auto-reply-bot',
     title: 'Claude APIで問い合わせ自動返信botを作る方法｜Discord×AI実践ガイド',
     description: 'Discord Webhookで届いた問い合わせに、Claude APIで自動返信。一次返信の自動化で対応速度を劇的に改善。コード全文付き。',
