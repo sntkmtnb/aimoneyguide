@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'contact-form-discord',
+    title: '問い合わせフォーム→Discord自動通知の作り方｜Next.js×Webhook実践ガイド',
+    description: 'Webサイトの問い合わせフォームからDiscordに自動通知する仕組みを実装。コード全文＋設定手順付きで、コピペで動く実践ガイド。',
+    date: '2026年2月17日',
+    tags: ['Discord', 'Webhook', 'ハンズオン'],
+  },
+  {
     slug: 'gas-gemini-automation',
     title: 'Google Workspace×AIで業務を自動化する方法｜GAS+Gemini活用ガイド',
     description: 'GAS+Gemini APIで業務自動化。メール返信、データ集計、承認フロー、議事録要約の5パターンを具体例付きで解説。',
