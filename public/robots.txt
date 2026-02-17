@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aimoneyguide.com
+Host: https://openclaw.newhello.jp
 
 # Sitemaps
-Sitemap: https://aimoneyguide.com/sitemap.xml
+Sitemap: https://openclaw.newhello.jp/sitemap.xml
