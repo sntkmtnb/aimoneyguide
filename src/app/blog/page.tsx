@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: 'slack-faq-chatbot',
+    title: '社内FAQ chatbotの作り方｜Slack×Claude API実践ガイド',
+    description: '社内ナレッジをAIに学習させ、SlackやTeamsで質問できるFAQ chatbotを構築。RAG方式でハルシネーション防止。コード全文付き。',
+    date: '2026年2月17日',
+    tags: ['Slack', 'FAQ bot', '社内DX'],
+  },
+  {
     slug: 'booking-calendar-automation',
     title: '予約管理をGoogleカレンダーで自動化する方法｜GAS×フォーム実践ガイド',
     description: 'Googleフォーム+GAS+カレンダーで予約管理を完全自動化。ダブルブッキング防止、確認メール、リマインダーまで。費用ゼロ。',

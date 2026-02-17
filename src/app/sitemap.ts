@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://openclaw.newhello.jp/blog/slack-faq-chatbot',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://openclaw.newhello.jp/blog/booking-calendar-automation',
       lastModified: new Date(),
       changeFrequency: 'monthly',
