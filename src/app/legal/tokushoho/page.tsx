@@ -37,7 +37,7 @@ export default function TokushohoPage() {
           </div>
           <div>
             <p className="font-semibold text-gray-900 mb-1">販売URL</p>
-            <p>https://ai-money-guide.com</p>
+            <p>https://openclaw.newhello.jp</p>
           </div>
           <div>
             <p className="font-semibold text-gray-900 mb-1">販売価格</p>

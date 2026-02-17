@@ -281,7 +281,7 @@ export async function analyzeInquiry(
   const data = await res.json();
   const text = data.content[0].text;
 
-  // JSONを抽出（コードブロックで囲まれていても対応）
+  // JSONを抽出（```json ... ``` でも対応）
   const jsonMatch = text.match(/\\{[\\s\\S]*\\}/);
   if (!jsonMatch) throw new Error('AI response parse error');
 

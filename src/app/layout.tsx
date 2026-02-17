@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: 'OpenClaw構築代行 by NEWHELLO',
     description:
       'OpenClawであなた専用のAIエージェントを構築。構築から運用まで全部やります。',
-    creator: '@ai_money_guide',
+    creator: '@newhello_jp',
     images: ['https://openclaw.newhello.jp/og-image.png'],
   },
   robots: {

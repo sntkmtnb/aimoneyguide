@@ -29,7 +29,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">お問い合わせ・法的情報</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/services#contact" className="hover:text-white transition-colors">お問い合わせフォーム</Link></li>
-              <li><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X（Twitter）</a></li>
+              <li><a href="https://x.com/newhello_jp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">X（Twitter）</a></li>
               <li><Link href="/legal/tokushoho" className="hover:text-white transition-colors">特定商取引法に基づく表記</Link></li>
               <li><Link href="/legal/privacy" className="hover:text-white transition-colors">プライバシーポリシー</Link></li>
             </ul>

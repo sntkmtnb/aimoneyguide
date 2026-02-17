@@ -545,7 +545,7 @@ export default function ServicesPage() {
             <p><span className="font-semibold text-gray-800">代表：</span>篠塚 基伸</p>
             <p><span className="font-semibold text-gray-800">事業内容：</span>AIエージェント開発・業務自動化の設計と構築</p>
             <p><span className="font-semibold text-gray-800">お問い合わせ：</span>上記フォームよりお願いします</p>
-            <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/ai_money_guide" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@ai_money_guide</a></p>
+            <p><span className="font-semibold text-gray-800">X（Twitter）：</span><a href="https://x.com/newhello_jp" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">@newhello_jp</a></p>
           </div>
         </div>
       </section>

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://ai-money-guide.com/sitemap.xml',
+    sitemap: 'https://openclaw.newhello.jp/sitemap.xml',
   };
 }

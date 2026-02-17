@@ -25,8 +25,8 @@ export default function Header() {
             <Link href="/services#faq" className="text-gray-600 hover:text-primary transition-colors">
               よくある質問
             </Link>
-            <Link href="/blog/openclaw-guide" className="text-gray-600 hover:text-primary transition-colors">
-              ガイド
+            <Link href="/blog" className="text-gray-600 hover:text-primary transition-colors">
+              ブログ
             </Link>
             <Link
               href="/services#contact"
@@ -61,8 +61,8 @@ export default function Header() {
             <Link href="/services#faq" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
               よくある質問
             </Link>
-            <Link href="/blog/openclaw-guide" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
-              ガイド
+            <Link href="/blog" className="block text-gray-600 hover:text-primary" onClick={() => setMobileOpen(false)}>
+              ブログ
             </Link>
             <Link
               href="/services#contact"

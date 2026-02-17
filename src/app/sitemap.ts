@@ -3,13 +3,13 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://ai-money-guide.com/services',
+      url: 'https://openclaw.newhello.jp/services',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://ai-money-guide.com/blog',
+      url: 'https://openclaw.newhello.jp/blog',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -33,43 +33,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/blog/gas-gemini-automation',
+      url: 'https://openclaw.newhello.jp/blog/gas-gemini-automation',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/blog/chatbot-cost',
+      url: 'https://openclaw.newhello.jp/blog/chatbot-cost',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/blog/what-is-openclaw',
+      url: 'https://openclaw.newhello.jp/blog/what-is-openclaw',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/blog/ai-cost-comparison',
+      url: 'https://openclaw.newhello.jp/blog/ai-cost-comparison',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/blog/openclaw-guide',
+      url: 'https://openclaw.newhello.jp/blog/openclaw-guide',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://ai-money-guide.com/legal/tokushoho',
+      url: 'https://openclaw.newhello.jp/legal/tokushoho',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
     },
     {
-      url: 'https://ai-money-guide.com/legal/privacy',
+      url: 'https://openclaw.newhello.jp/legal/privacy',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.3,
